@@ -1,0 +1,160 @@
+<section class="max-w-[1330px] mx-auto pt-[31px] pb-[96px]">
+  <div class="flex flex-row justify-between gap-5">
+    <div class="grow">
+      <table class="table-auto w-full [&>:not(:first-child)]:text-center">
+        <thead class="bg-blue-200 [&>*]:px-6 [&>*]:py-3">
+          <th class="">Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+          <th></th>
+        </thead>
+        <tbody class="[&>tr>td]:py-[25px] [&>tr>td]:border-b-2">
+          <tr class="">
+            <td class="product">
+              <div class="flex flex-row gap-[21px]">
+                <img src="../../../assets/6456332_.png" alt="" />
+                <div class="title flex flex-col gap-[11px]">
+                  <h1 class="font-bold">Play game</h1>
+                  <p>Color: Green</p>
+                  <p>Size: 30</p>
+                </div>
+              </div>
+            </td>
+            <td class="price font-bold">$ 11,70</td>
+            <td class="quantity ">
+              <app-quantity />
+            </td>
+            <td class="Subtotal font-bold">$ 11,70</td>
+            <td>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr class="">
+            <td class="product">
+              <div class="flex flex-row gap-[21px]">
+                <img src="../../../assets/6456332_.png" alt="" />
+                <div class="title flex flex-col gap-[11px]">
+                  <h1 class="font-bold">Play game</h1>
+                  <p>Color: Green</p>
+                  <p>Size: 30</p>
+                </div>
+              </div>
+            </td>
+            <td class="price font-bold">$ 11,70</td>
+            <td class="quantity">
+              <app-quantity />
+            </td>
+            <td class="Subtotal font-bold">$ 11,70</td>
+            <td>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        class="flex mt-[31px] flex-row justify-between gap-[65px] [&>*]:py-[19.5px] [&>*]:font-bold [&>*]:rounded-3xl [&>*]:text-xl"
+      >
+        <button class="bg-orange-500 text-white px-[37px]">
+          Continue Shopping
+        </button>
+        <button class="border-2 px-[42.5px] text-gray-500">Update Cart</button>
+        <button class="border-2 px-[54px] border-red-500 text-red-500">
+          Clear cart
+        </button>
+      </div>
+    </div>
+    <div class="border">
+      <h1 class="text-center py-[12.5px] bg-blue-100 font-semibold">
+        Cart total
+      </h1>
+
+      <div class="px-[35.5px] py-[21px]">
+        <div class="flex flex-row justify-between font-semibold pb-5 border-b">
+          <h1>Subtotal</h1>
+          <p>$ 23,20</p>
+        </div>
+
+        <div class="coupon py-[33px] border-b">
+          <div class="border py-[12px] px-[22px] rounded-2xl">
+            <input
+              type="text"
+              placeholder="Enter coupon code"
+              class="focus:outline-none focus:ring-0"
+            />
+            <button class="text-sm text-blue-600 font-semibold">Apply</button>
+          </div>
+        </div>
+
+        <div class="country pt-[33px] pb-[27px]">
+          <div
+            class="flex flex-row items-center border py-[12px] px-[22px] rounded-2xl"
+          >
+            <input
+              type="text"
+              placeholder="Country"
+              class="focus:outline-none focus:ring-0"
+            />
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="pt-[27px] pb-[29px]">
+          <div class="total flex flex-row justify-between">
+            <h1>Total amount</h1>
+            <p>$ 23,20</p>
+          </div>
+        </div>
+        <button
+          class="w-full py-[10.5px] font-bold bg-orange-500 text-white rounded-3xl"
+        >
+          Proceed to ckeckout
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

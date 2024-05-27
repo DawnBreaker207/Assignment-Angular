@@ -1,0 +1,101 @@
+<header>
+  <!--  -->
+  <div class="contact py-6">
+    <div
+      class="max-w-[1330px] mx-auto flex flex-row justify-between items-center"
+    >
+      <h1>Need help? Call us: (+98) 0234 456 789</h1>
+      <div class="flex flex-row gap-9">
+        <div class="flex gap-5">
+          @for (item of introduce; track item) {
+          <div [innerHTML]="sanitizer.bypassSecurityTrustHtml(item.icon)"></div>
+          <span>{{ item.name }}</span>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <div class="search bg-blue-900">
+    <div
+      class="max-w-[1330px] mx-auto flex flex-row justify-between py-[22px] items-center"
+    >
+      <div class="flex flex-row gap-[85px] items-center">
+        <div>
+          <a href="/">
+            <img src="../../../assets/logo 1.png" alt="" />
+          </a>
+        </div>
+        <div class="bg-white pl-[25px] rounded-2xl">
+          <input
+            type="text"
+            placeholder="Search anythings"
+            class="bg-transparent focus:outline-none focus:ring-0 pr-[100px]"
+          />
+          <button
+            class="py-[17.5px] px-[41px] bg-orange-500 text-white rounded-2xl"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+      <div class="flex text-white gap-[29px]">
+        <div class="flex gap-[12px]">
+          @for (item of authentication; track item) {
+          <div class="flex">
+            <div
+              [innerHTML]="sanitizer.bypassSecurityTrustHtml(item.icon)"
+            ></div>
+            <span
+              *ngIf="item.number === 0"
+              class="bg-orange-400 text-center rounded-full size-6"
+              >0</span
+            >
+          </div>
+          <h1>{{ item.name }}</h1>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <div class="top-nav bg-gray-300">
+    <div class="max-w-[1330px] mx-auto flex justify-between items-center">
+      <div class="flex flex-row gap-[98px] [&>*]:py-[23px] font-semibold">
+        <div
+          class="flex items-center gap-4 bg-orange-500 px-[14.5px] text-white"
+        >
+          Browse Categories
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </div>
+        <div class="flex gap-[29px] [&>*]:gap-4 [&>*]:items-center">
+          @for (menu of menus; track menu) {
+
+          <a href="{{ menu.path }}" class="flex">
+            {{ menu.name }}
+            <div
+              *ngIf="menu.icon !== ''"
+              [innerHTML]="sanitizer.bypassSecurityTrustHtml(menu.icon)"
+            ></div>
+          </a>
+          }
+        </div>
+      </div>
+      <h1 class="font-bold">30 Days Free Return</h1>
+    </div>
+  </div>
+  <!---->
+</header>
