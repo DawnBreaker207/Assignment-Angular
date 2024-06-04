@@ -1,11 +1,13 @@
 <section class="max-w-[1330px] mx-auto pt-[64px] pb-[100px]">
   <div>
     <div>
-      <h1 class="font-bold text-2xl pb-[53px] text-blue-600">Related product</h1>
+      <h1 class="font-bold text-2xl pb-[53px] text-blue-600">
+        Related product
+      </h1>
     </div>
     <div class="flex gap-[26.56px] justify-between">
-      @for (product of products; track product) {
-      <app-products-cards class="flex-grow"/>
+      @for (product of products.slice(0,4); track product) {
+      <app-products-cards class="flex-grow" />
       }
     </div>
   </div>

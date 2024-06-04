@@ -1,0 +1,96 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "Wireless headphones",
+      "price": "$11,70",
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Play game",
+      "price": "$11,70",
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Tablet as a laptop",
+      "price": "$11,70",
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Wireless headphones",
+      "price": "$11,70",
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Wireless headphones",
+      "price": "$11,70",
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Tablet as a laptop",
+      "price": "$11,70",
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Play game",
+      "price": "$11,70",
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Play game",
+      "price": "$11,70",
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Play game",
+      "price": "$11,70",
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Play game",
+      "price": "$11,70",
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Play game",
+      "price": "$11,70",
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Play game",
+      "price": "$11,70",
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Play game",
+      "price": "$11,70",
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Play game",
+      "price": "$11,70",
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+    }
+  ],
+  "users": [
+    {
+      "email": "lmao@gmail.com",
+      "password": "$2a$10$bTVvo/7tq.dxDVET89ww5eCGI/LEnKxM29ejA/hfrhzgxjN8rSFHO",
+      "name": "4324",
+      "id": 1
+    }
+  ]
+}

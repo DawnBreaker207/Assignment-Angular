@@ -11,10 +11,8 @@
     </div>
   </div>
   <div class="grid grid-cols-4 gap-6 pt-[53px]">
+    @for (product of products.slice(0,8); track products) {
     <app-products-cards />
-
-    @for (product of products; track products) {
-    <app-products-cards></app-products-cards>
     }
   </div>
 </section>

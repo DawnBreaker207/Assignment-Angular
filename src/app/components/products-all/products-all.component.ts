@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ProductsService } from '../../products.service';
+import { Product } from '../../../interfaces/Product';
 
 @Component({
   selector: 'app-products-all',
@@ -6,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './products-all.component.css',
 })
 export class ProductsAllComponent {
+  constructor(private ProductsService: ProductsService) {}
   categories: any = [
     {
       name: 'Categories',
@@ -32,66 +35,10 @@ export class ProductsAllComponent {
       reset: 5,
     },
   ];
-  products: any = [
-    {
-      name: 'Wireless headphones',
-      price: '$11,70',
-      image: '',
-    },
-    {
-      name: 'Play game',
-      price: '$11,70',
-      image: '',
-    },
-    {
-      name: 'Tablet as a laptop',
-      price: '$11,70',
-      image: '',
-    },
-    {
-      name: 'Wireless headphones',
-      price: '$11,70',
-      image: '',
-    },
-    {
-      name: 'Wireless headphones',
-      price: '$11,70',
-      image: '',
-    },
-    {
-      name: 'Tablet as a laptop',
-      price: '$11,70',
-      image: '',
-    },
-    {
-      name: 'Play game',
-      price: '$11,70',
-      image: '',
-    },
-    {
-      name: 'Play game',
-      price: '$11,70',
-      image: '',
-    },
-    {
-      name: 'Play game',
-      price: '$11,70',
-      image: '',
-    },
-    {
-      name: 'Play game',
-      price: '$11,70',
-      image: '',
-    },
-    {
-      name: 'Play game',
-      price: '$11,70',
-      image: '',
-    },
-    {
-      name: 'Play game',
-      price: '$11,70',
-      image: '',
-    },
-  ];
+  products: Product[] = [];
+  ngOnInit() {
+    this.ProductsService.Get_All_Product().subscribe((data) => {
+      this.products = data;
+    });
+  }
 }
