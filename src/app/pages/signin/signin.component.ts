@@ -24,7 +24,7 @@ export class SigninComponent {
   router = new Router();
   ngOnInit() {
     if (this.AuthenticationService.Check_User_Valid())
-      this.router.navigate(['admin/dashboard']);
+      this.router.navigate(['admin']);
   }
 
   onSubmit = () => {
@@ -34,7 +34,7 @@ export class SigninComponent {
       console.log(data);
       localStorage.setItem('token', data?.accessToken);
 
-      this.router.navigate(['admin/dashboard']);
+      this.router.navigate(['admin']);
     });
   };
 }

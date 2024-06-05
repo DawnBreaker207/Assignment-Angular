@@ -83,6 +83,34 @@
       "name": "Play game",
       "price": "$11,70",
       "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+    },
+    {
+      "name": "52525252",
+      "price": "4242432",
+      "categories": "lmao ",
+      "id": 16
+    }
+  ],
+  "categories": [
+    {
+      "name": "lmao",
+      "id": 1
+    },
+    {
+      "name": "lmao",
+      "id": 2
+    },
+    {
+      "name": "lmao",
+      "id": 3
+    },
+    {
+      "name": "lmao",
+      "id": 4
+    },
+    {
+      "name": "lmao",
+      "id": 5
     }
   ],
   "users": [
@@ -91,6 +119,18 @@
       "password": "$2a$10$bTVvo/7tq.dxDVET89ww5eCGI/LEnKxM29ejA/hfrhzgxjN8rSFHO",
       "name": "4324",
       "id": 1
+    },
+    {
+      "email": "admin@lmao.com",
+      "password": "$2a$10$QX9dqCdOzng0mIF1me7u9eStfM.r7T6zTxeMnWTsdKT81.e9kV3Q2",
+      "name": "lmao",
+      "id": 2
+    },
+    {
+      "email": "vl@gmail.com",
+      "password": "$2a$10$3zTxmyvxMczzU26FYPYOneE9JkY8k/GLWKn36/bEDLvfTxf9hMV6.",
+      "name": "423432",
+      "id": 3
     }
   ]
 }

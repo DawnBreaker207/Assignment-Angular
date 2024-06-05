@@ -31,6 +31,7 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { ProductsAddComponent } from './pages/admin/products-add/products-add.component';
 import { ProductsEditComponent } from './pages/admin/products-edit/products-edit.component';
 import { ActivatedRoute } from '@angular/router';
+import { CategoryAddComponent } from './pages/admin/category-add/category-add.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { ActivatedRoute } from '@angular/router';
     DashboardComponent,
     ProductsAddComponent,
     ProductsEditComponent,
+    CategoryAddComponent,
   ],
   imports: [
     BrowserModule,

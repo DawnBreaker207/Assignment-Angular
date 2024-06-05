@@ -12,6 +12,7 @@ import { ProductsEditComponent } from './pages/admin/products-edit/products-edit
 import { SigninComponent } from './pages/signin/signin.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { adminGuard } from './admin.guard';
+import { CategoryAddComponent } from './pages/admin/category-add/category-add.component';
 
 const routes: Routes = [
   {
@@ -31,11 +32,15 @@ const routes: Routes = [
     component: AdminComponent,
     canActivate: [adminGuard],
     children: [
-      { path: 'dashboard', component: DashboardComponent },
+      { path: '', component: DashboardComponent },
       { path: 'add', component: ProductsAddComponent },
       {
         path: 'edit/:id',
         component: ProductsEditComponent,
+      },
+      {
+        path: 'add-category',
+        component: CategoryAddComponent,
       },
     ],
   },
