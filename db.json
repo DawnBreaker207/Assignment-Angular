@@ -1,99 +1,380 @@
 {
   "products": [
     {
-      "id": 2,
-      "name": "Wireless headphones",
+      "id": 1,
+      "name": "Play game",
       "price": "$11,70",
-      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "categories": 5
+    },
+    {
+      "id": 2,
+      "name": "Play game",
+      "price": "$11,70",
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "categories": 5
     },
     {
       "id": 3,
       "name": "Play game",
       "price": "$11,70",
-      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "categories": 5
     },
     {
       "id": 4,
       "name": "Tablet as a laptop",
       "price": "$11,70",
-      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "categories": 4
     },
     {
       "id": 5,
       "name": "Wireless headphones",
       "price": "$11,70",
-      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "categories": 1
     },
     {
       "id": 6,
       "name": "Wireless headphones",
       "price": "$11,70",
-      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "categories": 4
     },
     {
       "id": 7,
       "name": "Tablet as a laptop",
       "price": "$11,70",
-      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "categories": 2
     },
     {
       "id": 8,
       "name": "Play game",
       "price": "$11,70",
-      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "categories": 4
     },
     {
       "id": 9,
       "name": "Play game",
       "price": "$11,70",
-      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "categories": 1
     },
     {
       "id": 10,
       "name": "Play game",
       "price": "$11,70",
-      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "categories": 2
     },
     {
       "id": 11,
       "name": "Play game",
       "price": "$11,70",
-      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "categories": 3
     },
     {
       "id": 12,
       "name": "Play game",
       "price": "$11,70",
-      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "categories": 1
     },
     {
       "id": 13,
       "name": "Play game",
       "price": "$11,70",
-      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "categories": 3
     },
     {
       "id": 14,
       "name": "Play game",
       "price": "$11,70",
-      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "categories": 2
     },
     {
       "id": 15,
       "name": "Play game",
       "price": "$11,70",
-      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+      "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "categories": 4
     },
     {
-      "name": "52525252",
-      "price": "4242432",
-      "categories": "lmao ",
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 3,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
       "id": 16
+    },
+    {
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 2,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
+      "id": 17
+    },
+    {
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 3,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
+      "id": 18
+    },
+    {
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 4,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
+      "id": 19
+    },
+    {
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 1,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
+      "id": 20
+    },
+    {
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 2,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
+      "id": 21
+    },
+    {
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 5,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
+      "id": 22
+    },
+    {
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 3,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
+      "id": 23
+    },
+    {
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 5,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
+      "id": 24
+    },
+    {
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 4,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
+      "id": 25
+    },
+    {
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 2,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
+      "id": 26
+    },
+    {
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 1,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
+      "id": 27
+    },
+    {
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 1,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
+      "id": 28
+    },
+    {
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 1,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
+      "id": 29
+    },
+    {
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 1,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
+      "id": 30
+    },
+    {
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 1,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
+      "id": 31
+    },
+    {
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 1,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
+      "id": 32
+    },
+    {
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 1,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
+      "id": 33
+    },
+    {
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 1,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
+      "id": 34
+    },
+    {
+      "name": "42342342",
+      "price": "42424242",
+      "categories": 1,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717693209/demoAngular/kkftsjurcl99b3mg50kp.jpg",
+      "id": 35
+    },
+    {
+      "name": "43984954",
+      "price": "lmaoiore",
+      "categories": 5,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717700037/demoAngular/q3mzkxogurbu3talmfnx.jpg",
+      "id": 36
+    },
+    {
+      "name": "43984954",
+      "price": "lmaoiore",
+      "categories": 5,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717700037/demoAngular/q3mzkxogurbu3talmfnx.jpg",
+      "id": 37
+    },
+    {
+      "name": "43984954",
+      "price": "lmaoiore",
+      "categories": 5,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717700037/demoAngular/q3mzkxogurbu3talmfnx.jpg",
+      "id": 38
+    },
+    {
+      "name": "43984954",
+      "price": "lmaoiore",
+      "categories": 3,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717700037/demoAngular/q3mzkxogurbu3talmfnx.jpg",
+      "id": 39
+    },
+    {
+      "name": "43984954",
+      "price": "lmaoiore",
+      "categories": 2,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717700037/demoAngular/q3mzkxogurbu3talmfnx.jpg",
+      "id": 40
+    },
+    {
+      "name": "43984954",
+      "price": "lmaoiore",
+      "categories": 2,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717700037/demoAngular/q3mzkxogurbu3talmfnx.jpg",
+      "id": 41
+    },
+    {
+      "name": "43984954",
+      "price": "lmaoiore",
+      "categories": 5,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717700037/demoAngular/q3mzkxogurbu3talmfnx.jpg",
+      "id": 42
+    },
+    {
+      "name": "43984954",
+      "price": "lmaoiore",
+      "categories": 4,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717700037/demoAngular/q3mzkxogurbu3talmfnx.jpg",
+      "id": 43
+    },
+    {
+      "name": "43984954",
+      "price": "lmaoiore",
+      "categories": 3,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717700037/demoAngular/q3mzkxogurbu3talmfnx.jpg",
+      "id": 44
+    },
+    {
+      "name": "3213123",
+      "price": "3123123",
+      "categories": 1,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717700072/demoAngular/jilgcvknllzjys2xndhm.jpg",
+      "id": 45
+    },
+    {
+      "name": "3213123",
+      "price": "3123123",
+      "categories": 4,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717700072/demoAngular/jilgcvknllzjys2xndhm.jpg",
+      "id": 46
+    },
+    {
+      "name": "3213123",
+      "price": "3123123",
+      "categories": 5,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717700072/demoAngular/jilgcvknllzjys2xndhm.jpg",
+      "id": 47
+    },
+    {
+      "name": "3213123",
+      "price": "3123123",
+      "categories": 6,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717700072/demoAngular/jilgcvknllzjys2xndhm.jpg",
+      "id": 48
+    },
+    {
+      "name": "3213123",
+      "price": "3123123",
+      "categories": 1,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717700072/demoAngular/jilgcvknllzjys2xndhm.jpg",
+      "id": 49
+    },
+    {
+      "name": "3213123",
+      "price": "3123123",
+      "categories": 3,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717700072/demoAngular/jilgcvknllzjys2xndhm.jpg",
+      "id": 50
+    },
+    {
+      "name": "423424242",
+      "price": "423423423",
+      "categories": 3,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717700093/demoAngular/dpmj0o9fzchbjmkjjfok.jpg",
+      "id": 51
+    },
+    {
+      "name": "Tung Anh",
+      "price": "4324242",
+      "categories": 5,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717700133/demoAngular/qfpwaaackw7xdsnzeanv.jpg",
+      "id": 52
+    },
+    {
+      "name": "42342423",
+      "price": "4324234",
+      "categories": 4,
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717700324/demoAngular/pimd44ugvwdsj28ionul.jpg",
+      "id": 53
     }
   ],
   "categories": [
     {
-      "name": "lmao",
+      "name": "check",
       "id": 1
     },
     {
@@ -111,6 +392,18 @@
     {
       "name": "lmao",
       "id": 5
+    },
+    {
+      "name": "Tung Anh",
+      "id": 6
+    },
+    {
+      "name": "MSI",
+      "id": 7
+    },
+    {
+      "name": "Check",
+      "id": 8
     }
   ],
   "users": [
@@ -131,6 +424,12 @@
       "password": "$2a$10$3zTxmyvxMczzU26FYPYOneE9JkY8k/GLWKn36/bEDLvfTxf9hMV6.",
       "name": "423432",
       "id": 3
+    },
+    {
+      "email": "lmao123@gmail.com",
+      "password": "$2a$10$GKSu4.TQ3uG/2cO1BDjEZeI4ptDhmD4AUnbuqftfEMV1kh54t2isu",
+      "name": "43342",
+      "id": 4
     }
   ]
 }

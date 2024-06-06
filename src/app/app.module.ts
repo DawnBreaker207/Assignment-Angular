@@ -32,6 +32,8 @@ import { ProductsAddComponent } from './pages/admin/products-add/products-add.co
 import { ProductsEditComponent } from './pages/admin/products-edit/products-edit.component';
 import { ActivatedRoute } from '@angular/router';
 import { CategoryAddComponent } from './pages/admin/category-add/category-add.component';
+import { SearchComponent } from './components/search/search.component';
+import { FilterComponent } from './components/filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +64,8 @@ import { CategoryAddComponent } from './pages/admin/category-add/category-add.co
     ProductsAddComponent,
     ProductsEditComponent,
     CategoryAddComponent,
+    SearchComponent,
+    FilterComponent,
   ],
   imports: [
     BrowserModule,

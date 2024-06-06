@@ -1,17 +1,21 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { SearchComponent } from '../search/search.component';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductsService } from '../../products.service';
 import { Product } from '../../../interfaces/Product';
-import { FormControl, FormGroup } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
-import { SearchComponent } from '../search/search.component';
+import { SearchService } from '../../search.service';
 
 @Component({
-  selector: 'app-products-all',
-  templateUrl: './products-all.component.html',
-  styleUrl: './products-all.component.css',
+  selector: 'app-filter',
+  templateUrl: './filter.component.html',
+  styleUrl: './filter.component.css',
 })
-export class ProductsAllComponent {
-  constructor(private ProductsService: ProductsService) {}
+export class FilterComponent {
+  constructor(
+    private route: ActivatedRoute,
+    private SearchService: SearchService
+  ) {}
   filterForm = new FormGroup({
     categories: new FormControl(''),
   });
@@ -41,10 +45,11 @@ export class ProductsAllComponent {
       reset: 5,
     },
   ];
-  products: Product[] = [];
   router = new Router();
+  products: any = [];
   ngOnInit() {
-    this.ProductsService.Get_All_Product().subscribe((data) => {
+    const categories = this.route.snapshot.queryParams['keywords'];
+    this.SearchService.Filter(categories).subscribe((data) => {
       this.products = data;
     });
   }

@@ -27,16 +27,20 @@
           </a>
         </div>
         <div class="bg-white pl-[25px] rounded-2xl">
-          <input
-            type="text"
-            placeholder="Search anythings"
-            class="bg-transparent focus:outline-none focus:ring-0 pr-[100px]"
-          />
-          <button
-            class="py-[17.5px] px-[41px] bg-orange-500 text-white rounded-2xl"
-          >
-            Search
-          </button>
+          <form action="" [formGroup]="searchForm" (ngSubmit)="onSearch()">
+            <input
+              type="text"
+              placeholder="Search anythings"
+              class="bg-transparent focus:outline-none focus:ring-0 pr-[100px]"
+              formControlName="keyword"
+            />
+            <button
+              class="py-[17.5px] px-[41px] bg-orange-500 text-white rounded-2xl"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
         </div>
       </div>
       <div class="flex text-white gap-[29px]">

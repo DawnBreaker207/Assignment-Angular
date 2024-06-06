@@ -32,10 +32,10 @@ export class ProductsEditComponent {
       this.products = data;
       this.productForm.controls.name.setValue(data.name);
       this.productForm.controls.price.setValue(data.price);
+      this.productForm.controls.categories.setValue(data.categories);
     });
     this.CategoryService.Get_All_Product().subscribe((data) => {
       this.categories = data;
-      this.productForm.controls.categories.setValue(data.categories);
     });
   }
   onSubmit = () => {

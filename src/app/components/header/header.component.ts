@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { DomSanitizer } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +13,14 @@ export class HeaderComponent {
   constructor(public sanitizer: DomSanitizer) {
     // this.trusted= this.sanitizer.bypassSecurityTrustHtml()
   }
-
+  searchForm = new FormGroup({
+    keyword: new FormControl(''),
+  });
+  router = new Router();
+  onSearch = () => {
+    const kw = this.searchForm.controls.keyword.value;
+    this.router.navigate(['search'], { queryParams: { keywords: kw } });
+  };
   introduce: any = [
     {
       id: 1,

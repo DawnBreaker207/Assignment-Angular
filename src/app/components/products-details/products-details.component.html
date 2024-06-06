@@ -2,7 +2,7 @@
   <div class="flex flex-col">
     <div class="mt-[22px] mb-[75px] flex flex-row gap-[49px]">
       <div class="image flex flex-col gap-[25px]">
-        <img src="../../../assets/6456332_sd 1.png" alt="" />
+        <img src="{{ products.image }}" alt="" />
         <div class="flex flex-row justify-between">
           <img src="../../../assets/Frame 29.png" alt="" />
           <img src="../../../assets/Frame 29.png" alt="" />
@@ -10,8 +10,10 @@
       </div>
       <div class="info [&>:not(:last-child)]:border-b-2 grow">
         <div class="info 1 pb-[22.5px]">
-          <h1 class="text-xl font-semibold">Play game</h1>
-          <p class="pt-[11px] pb-[19.63px] font-bold text-xl">$11,70</p>
+          <h1 class="text-xl font-semibold">{{ products.name }}</h1>
+          <p class="pt-[11px] pb-[19.63px] font-bold text-xl">
+            {{ products.price }}
+          </p>
 
           <div class="flex flex-row items-center gap-[10px]">
             @for (star of stars; track star) {
@@ -89,7 +91,8 @@
             >
               <button>-</button>
               <input
-                type="number" value="1"
+                type="number"
+                value="1"
                 class="appearance-none text-center pl-2 w-[64px] bg-transparent focus:outline-none focus:ring-0 border-y border-gray-600 h-full"
               />
               <button>+</button>
@@ -128,23 +131,23 @@
           <div class="category py-[31px] flex flex-row items-center gap-5">
             <h1>Category:</h1>
             <div class="flex flex-row gap-[13.59px] items-center text-sm">
-              <span>20% off</span>
+              <span>{{ products.categories }}</span>
+              <!-- <span>20% off</span>
               <span>49% off</span>
-              <span>Alex remote</span>
+              <span>Alex remote</span> -->
             </div>
           </div>
           <div class="share flex flex-row gap-5">
             <h1>Share</h1>
             <div class="flex flex-row gap-[37px]">
-             @for (social of socials; track social) {
+              @for (social of socials; track social) {
               <a href="#">
                 <div
-                [innerHTML]="sanitizer.bypassSecurityTrustHtml(social.icon)"
-              ></div>
-
+                  [innerHTML]="sanitizer.bypassSecurityTrustHtml(social.icon)"
+                ></div>
               </a>
 
-             }
+              }
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Product } from '../../../interfaces/Product';
 
 @Component({
   selector: 'app-products-cards',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './products-cards.component.css',
 })
 export class ProductsCardsComponent {
+  @Input() product: Product = {} as Product;
   check: boolean = true;
   stars: any = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }];
 }

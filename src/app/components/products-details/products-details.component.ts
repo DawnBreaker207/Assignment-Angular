@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
+import { Product } from '../../../interfaces/Product';
+import { ProductsService } from '../../products.service';
+import { Category } from '../../../interfaces/Category';
+import { CategoryService } from '../../category.service';
 
 @Component({
   selector: 'app-products-details',
@@ -7,7 +12,21 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrl: './products-details.component.css',
 })
 export class ProductsDetailsComponent {
-  constructor(public sanitizer: DomSanitizer) {}
+  constructor(
+    public sanitizer: DomSanitizer,
+    private route: ActivatedRoute,
+    private ProductsService: ProductsService,
+    private CategoryService: CategoryService
+  ) {}
+  products: Product = {} as Product;
+  async ngOnInit() {
+    const productId = this.route.snapshot.params['id'];
+    console.log(productId);
+    this.ProductsService.Get_Id_Product(productId).subscribe((data) => {
+      this.products = data;
+    });
+  }
+
   stars: any = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }];
   socials: any = [
     {

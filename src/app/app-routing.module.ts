@@ -13,6 +13,8 @@ import { SigninComponent } from './pages/signin/signin.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { adminGuard } from './admin.guard';
 import { CategoryAddComponent } from './pages/admin/category-add/category-add.component';
+import { SearchComponent } from './components/search/search.component';
+import { FilterComponent } from './components/filter/filter.component';
 
 const routes: Routes = [
   {
@@ -25,6 +27,8 @@ const routes: Routes = [
       { path: 'cart', component: CartComponent },
       { path: 'signin', component: SigninComponent },
       { path: 'signup', component: SignupComponent },
+      { path: 'search', component: SearchComponent },
+      { path: 'filter', component: FilterComponent },
     ],
   },
   {
