@@ -14,8 +14,10 @@ export class SearchComponent {
     private SearchService: SearchService
   ) {}
   products: any = [];
+  kw: string = '';
   ngOnInit() {
     const keywords = this.route.snapshot.queryParams['keywords'];
+    this.kw = keywords;
     this.SearchService.Search(keywords).subscribe((data) => {
       this.products = data;
     });

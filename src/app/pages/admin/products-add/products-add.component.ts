@@ -36,6 +36,7 @@ export class ProductsAddComponent {
   onChange(event: any) {
     if (event.target.files.length > 0) {
       const files = event.target.files[0];
+
       this.UploadService.Upload(files).subscribe((data: ImgRes) => {
         if (data.secure_url && data) {
           this.images = data.secure_url;
@@ -50,6 +51,7 @@ export class ProductsAddComponent {
   router = new Router();
   onSubmit = () => {
     const productData = this.productForm.value as Product;
+    console.log(productData);
 
     this.ProductsService.Add_Product(productData).subscribe((data) => {
       this.router.navigate(['admin']);

@@ -370,6 +370,27 @@
       "categories": 4,
       "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717700324/demoAngular/pimd44ugvwdsj28ionul.jpg",
       "id": 53
+    },
+    {
+      "name": "4342423",
+      "price": "4342432",
+      "categories": "6",
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717759604/demoAngular/uhubwp4vs6gfgjnqa4rk.jpg",
+      "id": 54
+    },
+    {
+      "name": "7347347347",
+      "price": "5363473",
+      "categories": "7",
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717873593/demoAngular/znxeiyv0iy19lyqdeyng.jpg",
+      "id": 55
+    },
+    {
+      "name": "525235252",
+      "price": "3425252",
+      "categories": "8",
+      "image": "https://res.cloudinary.com/devr9hihw/image/upload/v1717873667/demoAngular/s9cpdypkztplgxebo3ce.jpg",
+      "id": 56
     }
   ],
   "categories": [

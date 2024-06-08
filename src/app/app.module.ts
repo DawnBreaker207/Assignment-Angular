@@ -19,22 +19,19 @@ import { ProductsDetailsComponent } from './components/products-details/products
 import { QuantityComponent } from './components/quantity/quantity.component';
 import { RelatedProductComponent } from './components/related-product/related-product.component';
 import { SaleBannerComponent } from './components/sale-banner/sale-banner.component';
+import { SearchComponent } from './components/search/search.component';
 import { AdminComponent } from './layout/admin/admin.component';
 import { ClientComponent } from './layout/client/client.component';
+import { CategoryAddComponent } from './pages/admin/category-add/category-add.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
+import { ProductsAddComponent } from './pages/admin/products-add/products-add.component';
+import { ProductsEditComponent } from './pages/admin/products-edit/products-edit.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductsDetailComponent } from './pages/products-detail/products-detail.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { SigninComponent } from './pages/signin/signin.component';
 import { SignupComponent } from './pages/signup/signup.component';
-import { ProductsAddComponent } from './pages/admin/products-add/products-add.component';
-import { ProductsEditComponent } from './pages/admin/products-edit/products-edit.component';
-import { ActivatedRoute } from '@angular/router';
-import { CategoryAddComponent } from './pages/admin/category-add/category-add.component';
-import { SearchComponent } from './components/search/search.component';
-import { FilterComponent } from './components/filter/filter.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,7 +62,6 @@ import { FilterComponent } from './components/filter/filter.component';
     ProductsEditComponent,
     CategoryAddComponent,
     SearchComponent,
-    FilterComponent,
   ],
   imports: [
     BrowserModule,
@@ -73,7 +69,6 @@ import { FilterComponent } from './components/filter/filter.component';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent],

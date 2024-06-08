@@ -4,6 +4,9 @@ import { Product } from '../../../interfaces/Product';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { SearchComponent } from '../search/search.component';
+import { CategoryService } from '../../category.service';
+import { Category } from '../../../interfaces/Category';
+import { SearchService } from '../../search.service';
 
 @Component({
   selector: 'app-products-all',
@@ -11,45 +14,45 @@ import { SearchComponent } from '../search/search.component';
   styleUrl: './products-all.component.css',
 })
 export class ProductsAllComponent {
-  constructor(private ProductsService: ProductsService) {}
+  constructor(
+    private ProductsService: ProductsService,
+    private CategoryService: CategoryService,
+    private SearchService: SearchService
+  ) {}
   filterForm = new FormGroup({
     categories: new FormControl(''),
+    checkBox: new FormControl(''),
   });
-  categories: any = [
-    {
-      name: 'Categories',
-      reset: 10,
-    },
-    {
-      name: 'Tablet',
-      reset: 5,
-    },
-    {
-      name: 'Laptop',
-      reset: 5,
-    },
-    {
-      name: 'Headphones',
-      reset: 5,
-    },
-    {
-      name: 'Console',
-      reset: 5,
-    },
-    {
-      name: 'other',
-      reset: 5,
-    },
-  ];
   products: Product[] = [];
+  productFilter: any;
+  categories: Category[] = [];
   router = new Router();
   ngOnInit() {
     this.ProductsService.Get_All_Product().subscribe((data) => {
+      console.log(data);
+
       this.products = data;
     });
+    this.CategoryService.Get_All_Product().subscribe((data) => {
+      console.log(data);
+      this.categories = data;
+    });
   }
-  onFilter = () => {
-    const kw = this.filterForm.controls.categories.value;
-    this.router.navigate(['filter'], { queryParams: { keywords: kw } });
+
+  onFilter = (event: any) => {
+    const trueCheck = event.target.checked;
+    if (trueCheck) {
+      const check = event.target.id;
+      this.filterForm.patchValue({
+        categories: check,
+      });
+      const categories = this.filterForm.get('categories')?.value;
+      this.SearchService.Filter(categories).subscribe((data) => {
+        console.log(data);
+
+        this.productFilter = data as Product;
+        console.log(this.productFilter);
+      });
+    }
   };
 }
